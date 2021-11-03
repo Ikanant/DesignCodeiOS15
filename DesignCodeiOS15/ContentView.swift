@@ -15,7 +15,15 @@ struct ContentView: View {
                 .resizable(resizingMode: .stretch)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 26.0, height: 26.0)
-                .cornerRadius(20.0)
+                .cornerRadius(10)
+                .padding(9)
+                .background(
+                    .ultraThinMaterial,
+                    in: RoundedRectangle(
+                        cornerRadius: 20,
+                        style: .continuous
+                    )
+                )
             Text("Photography")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -44,7 +52,8 @@ struct ContentView: View {
         .background(
             .ultraThinMaterial
         )
-        .cornerRadius(30.0)
+//      .cornerRadius(30.0) COMMENTING IN ORDER TO USE MASKING. (It works the same way)
+        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 10, y: 10)
         .padding(.horizontal, 20)
         .background(
