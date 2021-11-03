@@ -11,6 +11,7 @@
 		ABC7D1E9273223B00036F68F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D1E8273223B00036F68F /* ContentView.swift */; };
 		ABC7D1EB273223B00036F68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D1EA273223B00036F68F /* Assets.xcassets */; };
 		ABC7D1EE273223B00036F68F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D1ED273223B00036F68F /* Preview Assets.xcassets */; };
+		ABE1F27E273347B80042B3AF /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1F27D273347B80042B3AF /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		ABC7D1ED273223B00036F68F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABC7D1F3273223B10036F68F /* DesignCodeiOS15Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignCodeiOS15Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC7D1FD273223B10036F68F /* DesignCodeiOS15UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesignCodeiOS15UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE1F27D273347B80042B3AF /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				ABC7D1E6273223B00036F68F /* DesignCodeiOS15App.swift */,
 				ABC7D1E8273223B00036F68F /* ContentView.swift */,
+				ABE1F27D273347B80042B3AF /* Styles.swift */,
 				ABC7D1EA273223B00036F68F /* Assets.xcassets */,
 				ABC7D1EC273223B00036F68F /* Preview Content */,
 			);
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE1F27E273347B80042B3AF /* Styles.swift in Sources */,
 				ABC7D1E9273223B00036F68F /* ContentView.swift in Sources */,
 				ABC7D1E7273223B00036F68F /* DesignCodeiOS15App.swift in Sources */,
 			);
