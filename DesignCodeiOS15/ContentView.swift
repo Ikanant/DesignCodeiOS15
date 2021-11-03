@@ -20,11 +20,11 @@ struct ContentView: View {
                 .background(
                     .ultraThinMaterial,
                     in: RoundedRectangle(
-                        cornerRadius: 20,
+                        cornerRadius: 16,
                         style: .continuous
                     )
                 )
-                .strokeStyle(cornerRadious: 20)
+                .strokeStyle(cornerRadious: 16)
             Text("Photography")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -53,7 +53,7 @@ struct ContentView: View {
         .background(
             .ultraThinMaterial
         )
-//      .cornerRadius(30.0) COMMENTING IN ORDER TO USE MASKING. (It works the same way)
+        // .cornerRadius(30.0) COMMENTING IN ORDER TO USE MASKING. (It works the same way)
         .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         .shadow(color: Color("Shadow").opacity(0.3), radius: 10, x: 10, y: 10)
         .strokeStyle()
@@ -78,7 +78,7 @@ struct ContentView_Previews: PreviewProvider {
             ContentView()
                 .preferredColorScheme(.dark)
                 .previewDevice("iPhone 11 Pro Max")
-            .previewInterfaceOrientation(.portrait)
+                .previewInterfaceOrientation(.portrait)
         }
     }
 }
