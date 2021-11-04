@@ -41,7 +41,7 @@ struct ContentView: View {
                 .fontWeight(.semibold)
                 .foregroundStyle(.secondary)
             
-            Text("Formulas to take your photography sklls from zero to hero!")
+            Text("Formulas to take your photography skills from zero to hero!")
                 .font(.footnote)
                 .multilineTextAlignment(.leading)
                 .lineLimit(2)

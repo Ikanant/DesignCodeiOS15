@@ -11,17 +11,40 @@ struct AccountView: View {
     var body: some View {
         NavigationView {
             List {
-                Section {
-                    Text("Settings")
-                    Text("Billing")
-                    Text("Help")
+                VStack(spacing: 8) {
+                    Image(systemName: "camera")
+                        .symbolVariant(.circle.fill) // This is platform specific and can change in iOS vs ipadOS vs macOS
+                        .font(.system(size: 32))
+                        .symbolRenderingMode(.palette) // This will allow us to tweak colors across icon layers
+                        .foregroundStyle(.blue, .blue.opacity(0.3))
+                        .padding()
+                        .background (Circle().fill(.ultraThinMaterial))
+                        .background(
+                            Image (systemName: "hexagon")
+                                .symbolVariant(.fill)
+                                .foregroundColor(.blue)
+                                .font(.system(size: 200))
+                                .offset(x: -50, y: -100)
+                        )
+                    Text("Jonathan Hernandez").font(.title.weight(.semibold))
+                    HStack {
+                        Image(systemName: "location").imageScale(.small) // This will not work for the Label component
+                        Text("Raleigh, NC").foregroundColor(.secondary)
+                    }
                 }
-                .listRowSeparatorTint(.blue)
-                .listRowSeparator(.hidden)
+                .frame (maxWidth: .infinity)
+                .padding()
+                Section {
+                    Label ("Settings", systemImage: "gear")
+                    Label ("Billing", systemImage: "creditcard")
+                    Label ("Help", systemImage: "questionmark")
+                }
             }
-            .listStyle(.sidebar)
-            .navigationTitle("Account:")
+            .listRowSeparatorTint(.blue)
+            .listRowSeparator(.hidden)
         }
+        .listStyle(.sidebar)
+        .navigationTitle("Account:")
     }
 }
 
