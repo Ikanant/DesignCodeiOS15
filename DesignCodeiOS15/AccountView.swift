@@ -35,13 +35,42 @@ struct AccountView: View {
                 .frame (maxWidth: .infinity)
                 .padding()
                 Section {
-                    Label ("Settings", systemImage: "gear")
-                    Label ("Billing", systemImage: "creditcard")
-                    Label ("Help", systemImage: "questionmark")
+                    NavigationLink(destination: ContentView()) {
+                        Label ("Settings", systemImage: "gear")
+                    }
+                    // Now there is a new way to do the same thing as NavigationLink but a bit cleaner...
+                    // Check link bellow: ACTION and LABEL
+                    NavigationLink { ContentView() } label:  {
+                        Label ("Billing", systemImage: "creditcard")
+                    }
+                    NavigationLink { Text("BANANA") } label: {
+                        Label ("Help", systemImage: "questionmark")
+                    }
                 }
+                // Modifiers for the parent component will apply to all the child ones:
+                .accentColor(.primary)
+                .listRowSeparatorTint(.blue)
+                .listRowSeparator(.hidden)
+                
+                Section {
+                    Link(destination: URL(string: "https://capturedzeal.com")!) {
+                        HStack {
+                            Label("Website", systemImage: "house")
+                            Spacer()
+                            Image(systemName: "link").foregroundColor(.secondary)
+                        }
+                    }
+                    Link(destination: URL(string: "https://instagram.com/capturedzeal")!) {
+                        HStack {
+                            Label("Website", systemImage: "camera")
+                            Spacer()
+                            Image(systemName: "link").foregroundColor(.secondary)
+                        }
+                    }
+                }
+                .accentColor(.primary)
+                .listRowSeparator(.hidden)
             }
-            .listRowSeparatorTint(.blue)
-            .listRowSeparator(.hidden)
         }
         .listStyle(.sidebar)
         .navigationTitle("Account:")
