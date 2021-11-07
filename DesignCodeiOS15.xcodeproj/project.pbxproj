@@ -104,7 +104,6 @@
 				C7162B57FC237016E5416515 /* Pods-DesignCodeiOS15Tests.debug.xcconfig */,
 				24090F554B3DC783C5B2AE98 /* Pods-DesignCodeiOS15Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
