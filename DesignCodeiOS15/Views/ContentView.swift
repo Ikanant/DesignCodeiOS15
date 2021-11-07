@@ -76,7 +76,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
-                .preferredColorScheme(.dark)
                 .previewDevice("iPhone 11 Pro Max")
                 .previewInterfaceOrientation(.portrait)
         }
