@@ -14,6 +14,9 @@
 		ABE1F27E273347B80042B3AF /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1F27D273347B80042B3AF /* Styles.swift */; };
 		ABE1F2802733689B0042B3AF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1F27F2733689B0042B3AF /* AccountView.swift */; };
 		ABEF6219273755F3006436F4 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF6218273755F3006436F4 /* HelpView.swift */; };
+		ABEF621C2738225D006436F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF621B2738225D006436F4 /* User.swift */; };
+		ABEF621F2738233D006436F4 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF621E2738233D006436F4 /* UserViewModel.swift */; };
+		ABEF622127382903006436F4 /* UpdateUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABEF622027382903006436F4 /* UpdateUserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		ABE1F27D273347B80042B3AF /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		ABE1F27F2733689B0042B3AF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		ABEF6218273755F3006436F4 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		ABEF621B2738225D006436F4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ABEF621E2738233D006436F4 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		ABEF622027382903006436F4 /* UpdateUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 		ABC7D1E5273223B00036F68F /* DesignCodeiOS15 */ = {
 			isa = PBXGroup;
 			children = (
+				ABEF621A2738224D006436F4 /* Models */,
+				ABEF621D27382328006436F4 /* ViewModels */,
 				ABF125682734C73700E6F12D /* Views */,
 				ABC7D1E6273223B00036F68F /* DesignCodeiOS15App.swift */,
 				ABE1F27D273347B80042B3AF /* Styles.swift */,
@@ -109,12 +117,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ABEF621A2738224D006436F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF621B2738225D006436F4 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABEF621D27382328006436F4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ABEF621E2738233D006436F4 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		ABF125682734C73700E6F12D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				ABC7D1E8273223B00036F68F /* ContentView.swift */,
 				ABE1F27F2733689B0042B3AF /* AccountView.swift */,
 				ABEF6218273755F3006436F4 /* HelpView.swift */,
+				ABEF622027382903006436F4 /* UpdateUserInfo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -251,8 +276,11 @@
 			files = (
 				ABE1F2802733689B0042B3AF /* AccountView.swift in Sources */,
 				ABE1F27E273347B80042B3AF /* Styles.swift in Sources */,
+				ABEF621C2738225D006436F4 /* User.swift in Sources */,
 				ABC7D1E9273223B00036F68F /* ContentView.swift in Sources */,
 				ABEF6219273755F3006436F4 /* HelpView.swift in Sources */,
+				ABEF622127382903006436F4 /* UpdateUserInfo.swift in Sources */,
+				ABEF621F2738233D006436F4 /* UserViewModel.swift in Sources */,
 				ABC7D1E7273223B00036F68F /* DesignCodeiOS15App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

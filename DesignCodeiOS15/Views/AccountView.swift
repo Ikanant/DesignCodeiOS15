@@ -51,8 +51,8 @@ struct AccountView: View {
     
     var menu: some View {
         Section {
-            NavigationLink(destination: ContentView()) {
-                Label ("Settings", systemImage: "gear")
+            NavigationLink(destination: UpdateUserInfo()) {
+                Label ("Update User Info", systemImage: "gear")
             }
             // Now there is a new way to do the same thing as NavigationLink but a bit cleaner...
             // Check link bellow: ACTION and LABEL
