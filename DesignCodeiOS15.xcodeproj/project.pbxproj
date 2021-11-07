@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A68ABFF5F9962DD6AAB15DC /* Pods_DesignCodeiOS15Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991A5736DB9C91D622A85291 /* Pods_DesignCodeiOS15Tests.framework */; };
+		AB51DD9127386E0400F91B3D /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51DD9027386E0400F91B3D /* UserRepository.swift */; };
 		ABC7D1E7273223B00036F68F /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D1E6273223B00036F68F /* DesignCodeiOS15App.swift */; };
 		ABC7D1E9273223B00036F68F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D1E8273223B00036F68F /* ContentView.swift */; };
 		ABC7D1EB273223B00036F68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D1EA273223B00036F68F /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		8A6C597FA62A27B6C818CC70 /* Pods_DesignCodeiOS15_DesignCodeiOS15UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignCodeiOS15_DesignCodeiOS15UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		991A5736DB9C91D622A85291 /* Pods_DesignCodeiOS15Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignCodeiOS15Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92D0EBB5874609741E2209A /* Pods-DesignCodeiOS15.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignCodeiOS15.debug.xcconfig"; path = "Target Support Files/Pods-DesignCodeiOS15/Pods-DesignCodeiOS15.debug.xcconfig"; sourceTree = "<group>"; };
+		AB51DD9027386E0400F91B3D /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		ABC7D1E3273223B00036F68F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC7D1E6273223B00036F68F /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		ABC7D1E8273223B00036F68F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AB51DD8F27386DBE00F91B3D /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AB51DD9027386E0400F91B3D /* UserRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		ABC7D1DA273223B00036F68F = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +153,7 @@
 				ABEF621A2738224D006436F4 /* Models */,
 				ABEF621D27382328006436F4 /* ViewModels */,
 				ABF125682734C73700E6F12D /* Views */,
+				AB51DD8F27386DBE00F91B3D /* Repositories */,
 				ABC7D1E6273223B00036F68F /* DesignCodeiOS15App.swift */,
 				ABE1F27D273347B80042B3AF /* Styles.swift */,
 				ABC7D1EA273223B00036F68F /* Assets.xcassets */,
@@ -428,6 +439,7 @@
 			files = (
 				ABE1F2802733689B0042B3AF /* AccountView.swift in Sources */,
 				ABE1F27E273347B80042B3AF /* Styles.swift in Sources */,
+				AB51DD9127386E0400F91B3D /* UserRepository.swift in Sources */,
 				ABEF621C2738225D006436F4 /* User.swift in Sources */,
 				ABC7D1E9273223B00036F68F /* ContentView.swift in Sources */,
 				ABEF6219273755F3006436F4 /* HelpView.swift in Sources */,

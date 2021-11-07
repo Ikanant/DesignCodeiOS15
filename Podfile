@@ -8,6 +8,11 @@ target 'DesignCodeiOS15' do
   # Pods for DesignCodeiOS15
   pod 'Firebase/Auth'
   pod 'Firebase/Analytics'
+  
+  # In order to use the Firebase DB we will need:
+  pod 'Firebase/Firestore'
+  # And in order to be able to use Code-able support we will also need:
+  pod 'FirebaseFirestoreSwift'
 
   target 'DesignCodeiOS15Tests' do
     inherit! :search_paths

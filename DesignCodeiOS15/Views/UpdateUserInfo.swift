@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UpdateUserInfo: View {
     // In order to bind the UI to the object it needs to be an observable object
-    @ObservedObject var userVM = UserViewModel(user: debugUser)
+    @ObservedObject var userVM = UserViewModel()
     
     var onCommit: (User) -> (Void) = { _ in }
     

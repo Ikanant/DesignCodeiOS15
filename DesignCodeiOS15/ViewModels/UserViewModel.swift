@@ -14,6 +14,7 @@ class UserViewModel: ObservableObject, Identifiable {
     // Each ViewMode will hold a reference to the user:
     // @published will set it so any changes on the property will be listened too
     @Published var user: User
+    @Published var userRepository = UserRepository()
     
     private var cancellables = Set<AnyCancellable>() // Memory management purposes
     
@@ -21,8 +22,8 @@ class UserViewModel: ObservableObject, Identifiable {
     @Published var firstName: String = ""
     @Published var lastName: String = ""
     
-    init(user: User) {
-        self.user = user
+    init() {
+        self.user = debugUser
         
         $user.map { user in
             user.firstName
@@ -36,11 +37,11 @@ class UserViewModel: ObservableObject, Identifiable {
         .assign(to: \.lastName, on: self)
         .store(in: &cancellables)
         
-        // We need to keep track of the IDs
-        $user.map { user in
-            user.id
-        }
-        .assign(to: \.id, on: self)
-        .store(in: &cancellables) // This is for memory management purposes
+//        We need to keep track of the IDs
+//        $user.map { user in
+//            user.id
+//        }
+//        .assign(to: \.id, on: self)
+//        .store(in: &cancellables) // This is for memory management purposes
     }
 }

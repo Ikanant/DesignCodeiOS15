@@ -10,6 +10,10 @@ import Firebase
 
 @main
 struct DesignCodeiOS15App: App {
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             AccountView()
