@@ -25,6 +25,13 @@ class UserViewModel: ObservableObject, Identifiable {
     init() {
         self.user = debugUser
         
+//        userRepository.map { users in
+//            users.map { user in
+//                user
+//            }
+//        }
+//        .assign(to: .user, on: self)
+        
         $user.map { user in
             user.firstName
         }
@@ -36,12 +43,5 @@ class UserViewModel: ObservableObject, Identifiable {
         }
         .assign(to: \.lastName, on: self)
         .store(in: &cancellables)
-        
-//        We need to keep track of the IDs
-//        $user.map { user in
-//            user.id
-//        }
-//        .assign(to: \.id, on: self)
-//        .store(in: &cancellables) // This is for memory management purposes
     }
 }
