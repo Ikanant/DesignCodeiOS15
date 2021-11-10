@@ -33,11 +33,14 @@ struct AccountView: View {
                 .padding()
                 .background (Circle().fill(.ultraThinMaterial))
                 .background(
-                    Image (systemName: "hexagon")
-                        .symbolVariant(.fill)
-                        .foregroundColor(.blue)
-                        .font(.system(size: 200))
-                        .offset(x: -50, y: -100)
+//                    Image (systemName: "hexagon")
+//                        .symbolVariant(.fill)
+//                        .foregroundColor(.blue)
+//                        .font(.system(size: 200))
+//                        .offset(x: -50, y: -100)
+                    
+                    // WOAH I can reference a canvas here ?!
+                    HexagonView().offset(x: -50, y: -100)
                 )
             Text("Jonathan Hernandez").font(.title.weight(.semibold))
             HStack {

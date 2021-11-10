@@ -19,7 +19,7 @@ struct HexagonView: View {
             context.draw(Image("Blob 1"), in: CGRect(x: 0, y: 0, width: 200, height: 200))
             context.draw(Image(systemName: "hexagon.fill"), in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
         }
-        .frame(width: 200, height: 220)
+        .frame(width: 200, height: 212)
         .foregroundStyle(.linearGradient(colors: [.pink, .blue], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
