@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7521B2CFD6D6E1BD106671E0 /* Pods_DesignCodeiOS15.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB4360869D52626587FFB0 /* Pods_DesignCodeiOS15.framework */; };
 		AB51DD9127386E0400F91B3D /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB51DD9027386E0400F91B3D /* UserRepository.swift */; };
+		AB5C5F83273B694B0057E740 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C5F82273B694B0057E740 /* HexagonView.swift */; };
 		ABC7D1E7273223B00036F68F /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D1E6273223B00036F68F /* DesignCodeiOS15App.swift */; };
 		ABC7D1E9273223B00036F68F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC7D1E8273223B00036F68F /* ContentView.swift */; };
 		ABC7D1EB273223B00036F68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC7D1EA273223B00036F68F /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		319C38828F87BF5E36F6003E /* Pods-DesignCodeiOS15-DesignCodeiOS15UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignCodeiOS15-DesignCodeiOS15UITests.debug.xcconfig"; path = "Target Support Files/Pods-DesignCodeiOS15-DesignCodeiOS15UITests/Pods-DesignCodeiOS15-DesignCodeiOS15UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		49CB4360869D52626587FFB0 /* Pods_DesignCodeiOS15.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesignCodeiOS15.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB51DD9027386E0400F91B3D /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		AB5C5F82273B694B0057E740 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 		ABC7D1E3273223B00036F68F /* DesignCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC7D1E6273223B00036F68F /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		ABC7D1E8273223B00036F68F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				ABE1F27F2733689B0042B3AF /* AccountView.swift */,
 				ABEF6218273755F3006436F4 /* HelpView.swift */,
 				ABEF622027382903006436F4 /* UpdateUserInfo.swift */,
+				AB5C5F82273B694B0057E740 /* HexagonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE1F2802733689B0042B3AF /* AccountView.swift in Sources */,
+				AB5C5F83273B694B0057E740 /* HexagonView.swift in Sources */,
 				ABE1F27E273347B80042B3AF /* Styles.swift in Sources */,
 				AB51DD9127386E0400F91B3D /* UserRepository.swift in Sources */,
 				ABEF621C2738225D006436F4 /* User.swift in Sources */,

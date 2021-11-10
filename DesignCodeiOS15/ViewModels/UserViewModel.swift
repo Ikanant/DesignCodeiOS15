@@ -24,7 +24,7 @@ class UserViewModel: ObservableObject, Identifiable {
     
     init() {
         self.user = debugUser
-        
+          
 //        userRepository.map { users in
 //            users.map { user in
 //                user
